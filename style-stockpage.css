@@ -1,0 +1,71 @@
+body{
+    background-color: #2a2c2e;
+}
+
+.btn-group-vertical{
+    background-color: #6c757d;
+    position: relative;
+    height: 44.8em;
+}
+
+.sidebar-icon{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.name-price{
+    position: absolute;
+    background-color: #6c757d;
+    top: 30px;
+    left:100px;
+    height: 97px;
+    
+}
+.market-info{
+    background-color: #6c757d;
+    position: absolute;
+    top: 30px;
+    right:10px;
+}
+.list-group-item{
+    background-color: #6c757d;
+    color: black;
+}
+.stock-graph{
+    position: absolute;
+    height: 400px;
+    width: 800px;
+    left: 410px;
+    top: 170px;
+}
+.btn-success{
+    margin-right: 150px;
+    
+}
+.btn-danger{
+    margin-left: 150px;
+}
+
+.Buttons{
+    position: absolute;
+    bottom: 40px;
+    left: 550px;
+}
+.qty-selector{
+    width: 60px;
+}
+.order-price{
+    width: fit-content;
+    color: white;
+    position: absolute;
+    
+
+
+}
+.qty-owned{
+    width: 8em;
+    color: white;
+    position: absolute;
+    left: 400px;
+}

@@ -1,0 +1,5 @@
+1. Market data
+2. Compare two datas side by side
+3. Portfolio
+4. Login/Signup
+5. Particular Stock data

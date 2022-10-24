@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup</title>
+    <link rel="stylesheet" href="style-login-signup.css">
+</head>
+<body>
+    <div class = "WebAppName-div">
+        <h1 class = "WebAppName-header">Web App Name</h1>
+    </div>
+
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+                <input type="text" placeholder="First Name"/>
+                <input type="text" placeholder="Last Name"/>
+                <input type="text" placeholder="Email"/>
+                <input type="text" placeholder="Mobile"/>
+                <input type="text" placeholder="Password"/>
+                <input type="text" placeholder="Confirm Password"/>
+                <button>create</button>
+                <p class="message">Already Registered?
+                    <a href="#">Login</a>
+                </p>
+            </form>
+
+
+            <form class="login-form">
+                <input type="text" placeholder="Registered Email"/>
+                <input type="password" placeholder="Password"/>
+                <button><a href="stockpage.html">Login</a></button>
+                
+                <p class="message">Not Registered?
+                    <a href="#">Register</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js">
+
+
+    </script>
+    <script>
+        $(".message a").click(function(){
+         $("form").animate({height:"toggle",opacity:"toggle"},"slow");
+        });
+    </script>
+</body>
+<body>
+    
+</body>
+</html>
