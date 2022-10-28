@@ -1,0 +1,19 @@
+body{
+    background-color: #2a2c2e;
+}
+
+.btn-group-vertical{
+    background-color: #6c757d;
+    position: relative;
+    height: 40em;
+}
+
+.sidebar-icon{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+
+
+
