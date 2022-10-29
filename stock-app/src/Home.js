@@ -2,10 +2,10 @@ import React from "react";
 import HomePageContainer from "./HomePageContainer";
 import SideBar from "./SideBar";
 
-function App() {
+function Home() {
   return (
     <><SideBar/><HomePageContainer/></>
   );
 }
 
-export default App;
+export default Home;

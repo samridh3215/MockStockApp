@@ -68,3 +68,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+---
+## Rendering different pages of stock
+-> Each button will be binded to a function that will resnder the page corresponding to it, aka conditional rendering
+-> We render the a new page everytime the button is clicked.
+-> The changes take place in index.js
