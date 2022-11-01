@@ -6,7 +6,7 @@ body{
     background-color: #6c757d;
     position: relative;
     height: 40em;
-    margin-right: 30em;
+    margin-right: 10em;
 }
 
 .sidebar-icon{
@@ -15,12 +15,14 @@ body{
     left: 10px;
 }
 
-h1{
+.page-info{
     color: white;
     position: absolute;
     top: 0px;
-    display: inline-block;
+    left: 150px;
+    
 }
+
 
 
 
