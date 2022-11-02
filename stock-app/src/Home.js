@@ -9,13 +9,13 @@ function Home() {
   var d = getSymbols();
   var sym = d[0];
   console.log(d);
-  console.log(d[0])
+
   return (
-    <>
+    <div>
       <SideBar />
-      {/* <HomePageContainer/> */}
+      <HomePageContainer/>
       
-    </>
+    </div>
   );
 }
 

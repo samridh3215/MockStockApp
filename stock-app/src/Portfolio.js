@@ -7,7 +7,7 @@ import { getSymbols } from "./responsesFromAPI";
 function Portfolio() {
 
     return (
-        <>
+        <div>
 
             <h1 className="page-info">Your Investments</h1>
             <div className="container-md" id="portfolio-info">
@@ -17,7 +17,7 @@ function Portfolio() {
             <div className="portfolio">
                 <SideBar />
             </div>
-        </>
+        </div>
     );
 }
 

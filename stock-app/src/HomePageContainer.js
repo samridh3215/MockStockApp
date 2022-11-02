@@ -2,7 +2,7 @@ import React from "react";
 
 function HomePageContainer(){
     return (
-        <>
+        <div>
         <h1 className="page-info">Stocks at a glance</h1>
         <div className="big-home-container">
             <div className="home-container" id ="Gainers">
@@ -16,7 +16,7 @@ function HomePageContainer(){
                 <h3>Holdings</h3>
             </div>
         </div>
-        </>
+        </div>
     );
 }
 
