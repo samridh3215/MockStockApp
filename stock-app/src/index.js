@@ -1,7 +1,7 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import Home from "./Home";
+import {Home} from "./Home";
 import Portfolio from "./Portfolio";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 

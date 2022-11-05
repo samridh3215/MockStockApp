@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HomePageContainer from "./HomePageContainer";
-import { getSymbols } from "./responsesFromAPI";
+import { getGainers, getSymbols, getLosers } from "./responsesFromAPI";
 import SideBar from "./SideBar";
 
+function useFunction(callback){
+  const [state, setState] = useState([])
+  useEffect(() => {
+    callback().then(r => setState(r))
+  }, [])
+  return state
+}
 
 
 function Home() {
-  var d = getSymbols();
-  var sym = d[0];
-  console.log(d);
 
   return (
     <div>
@@ -19,4 +23,4 @@ function Home() {
   );
 }
 
-export default Home;
+export {Home, useFunction}
