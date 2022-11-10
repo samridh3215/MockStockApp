@@ -12,5 +12,42 @@ h1{
 }
 
 .stock-render-table{
+     position: relative;
+     left: 140px;
+}
+
+.stock-render-table th{
+     background-color: rgb(205, 199, 199);
+     padding-right: 30px;
+     color: black;
+     border-radius: 2%;
+}
+.stock-render-table td{
+     color: black;
      background-color: grey;
+     padding-right: 30px;
+     text-align: center;
+     padding-bottom: 3px;
+}
+
+.buy{
+     background-color: green;
+     height: 20px;
+     border: none;
+     border-radius: 25%;
+     font-size: 15px;
+}
+.sell{
+     background-color: red;
+     height: 20px;
+     border: none;
+     border-radius: 25%;
+     font-size: 15px;
+}
+.more{
+     background:none;
+     height: 20px;
+     border: none;
+     border-radius: 25%;
+     font-size: 15px;
 }
