@@ -10,7 +10,7 @@ function HomePageContainer(props){
 
     return (
         <div>
-        <h1 className="page-info">Stocks at a glance</h1>
+        
         <div className="big-home-container">
             <div className="home-container" id ="Gainers">
                 <h3 style={{color: "green"}}>Gainers</h3>

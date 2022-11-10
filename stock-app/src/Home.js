@@ -16,9 +16,10 @@ function Home() {
 
   return (
     <div>
+      <h1 className="page-info">Stocks at a glance</h1>
       <SideBar />
       <HomePageContainer/>
-      
+
     </div>
   );
 }

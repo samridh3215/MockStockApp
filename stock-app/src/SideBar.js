@@ -9,14 +9,14 @@ function SideBar(){
      return(
           <div className="btn-group-vertical" role="group" aria-label="Basic example">
                <Link to="/"><img className="sidebar-icon" id="homebutton-icon" src={logopath} alt="icon"></img></Link>
-
                <button type="button" className="btn btn-secondary" id="btn-profile">Profile</button>
                <br/>
                <button type="button" className="btn btn-secondary" id="btn-wallet">Wallet</button>
                <br/>
-               <button type="button" className="btn btn-secondary" id="btn-stocks">Stocks</button>
+               <Link to="/Stocks"><button type="button" className="btn btn-secondary" id="btn-stocks">Stocks</button></Link>
                <br/>
                <Link to="/Portfolio"><button type="button" className="btn btn-secondary" id="btn-portfolio">Portfolio</button></Link>
+               <br/>
           </div>
      );
 }

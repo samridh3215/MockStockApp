@@ -1,0 +1,16 @@
+h1{
+     display: block;
+     color: whitesmoke;
+     text-align: center;
+}
+
+.stock-render-div{
+     color:white;
+     display: inline-block;
+     position:absolute;
+     top:100px;
+}
+
+.stock-render-table{
+     background-color: grey;
+}
