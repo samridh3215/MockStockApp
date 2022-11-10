@@ -5,15 +5,18 @@ body{
 .btn-group-vertical{
     background-color: #6c757d;
     position: relative;
-    height: 40em;
+    top:10em;
+    height: fit-content;
     margin-right: 10em;
+    margin-left: 10px;
+    border-radius:7%;
 }
 
-.sidebar-icon{
-    position: absolute;
+/* .sidebar-icon{
+
     top: 20px;
     left: 10px;
-}
+} */
 
 
 
