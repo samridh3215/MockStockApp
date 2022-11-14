@@ -6,8 +6,6 @@ import Portfolio from "./Portfolio";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Stocks from "./Stocks"
 
-
-
 const root = document.getElementById('root')
 ReactDOM.render(
     <BrowserRouter>
