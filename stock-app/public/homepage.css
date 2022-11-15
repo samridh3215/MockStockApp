@@ -6,12 +6,6 @@
     margin-top: 10em;
 }
 
-.home-container{
-    height: 400px;
-    width: 250px;
-    background-color: whitesmoke;
-    display: inline-block;
-    margin: 30px;
+.box{
+    background-color: wheat;
 }
-
-

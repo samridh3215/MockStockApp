@@ -25,7 +25,7 @@ function Stocks(){
                               <td>{item.volume}</td> 
                               <td style={{background:"none"}}><button  className="buy" onDoubleClick={()=>{console.log("bought", item.symbol)}}>Buy</button></td> 
                               <td style={{background:"none"}}><button className="sell" onDoubleClick={()=>{console.log("sold", item.symbol)}}>Sell</button></td> 
-                              <td style={{background:"none"}}><a className="more">View more </a></td>
+                              <td style={{background:"none"}}><a href="/Stocks/details" className="more">View more</a></td>
                          </tr>
                     )}
                     </table>

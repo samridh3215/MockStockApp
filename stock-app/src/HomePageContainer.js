@@ -1,30 +1,39 @@
 import React from "react";
 import { useFunction } from "./Home";
 import { getSymbols, getGainers, getLosers } from "./responsesFromAPI";
-
+import HomePageBox from "./HomePageBox";
 
 function HomePageContainer(props){
     var gainers = useFunction(getGainers);
     var losers = useFunction(getLosers);
     var symbols = useFunction(getSymbols);
-
     return (
-        <div>
-        
         <div className="big-home-container">
-            <div className="home-container" id ="Gainers">
-                <h3 style={{color: "green"}}>Gainers</h3>
-                <ul>{gainers.map(item=>(<li>{item.symbol} -- [change:+{item.change}]</li>))} </ul>
+            <div className="render-box gainers">
+            <h1>Gainers</h1>
+                {gainers.map(item =>
+                    <HomePageBox companyName={item.companyName} price={item.price} symbol={item.symbol} change={item.beta}/>
+                )}
             </div>
-            <div className="home-container" id = "Losers">
-                <h3 style={{ color: "red" }}>Losers</h3>
-                <ul>{losers.map(item=>(<li>{item.symbol} -- [change:{item.change}]</li>))} </ul>
+            
+            <div className="render-box losers">
+            <h1>Losers</h1>
+                {losers.map(item =>
+                    <HomePageBox companyName={item.companyName} price={item.price} symbol={item.symbol} change={item.beta}/>
+                )}
             </div>
-            <div className="home-container" id = "Holdings">
-                <h3>Holdings</h3>
-                <ul>{symbols.slice(0,10).map(item=>(<li>{item.symbol} -- [price: {item.price}]</li>))} </ul>
-            </div>
-        </div>
+            {/* <table className="stock-render-table losers">
+                    <tr><th>S.No</th> <th>Company Name</th> <th>Stock Symbol</th> <th>Change</th></tr>
+                    {losers.slice(0, 20).map(
+                    item=><tr>
+                              <td>{i++}</td>
+                              <td>{item.companyName}</td> 
+                              <td>{item.symbol}</td>
+                              <td>{item.beta}</td>  
+                              <td style={{background:"none"}}><a href="/Stocks/details" className="more">View more</a></td>
+                         </tr>
+                    )}
+            </table> */}
         </div>
     );
 }
