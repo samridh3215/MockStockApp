@@ -4,7 +4,7 @@ body{
 
 .btn-group-vertical{
     background-color: #6c757d;
-    position: relative;
+    position:relative;
     top:10em;
     height: fit-content;
     margin-right: 10em;

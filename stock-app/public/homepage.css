@@ -1,11 +1,30 @@
 .big-home-container{
-    width: fit-content;
     position: absolute;
-    top:0px;
-    margin-left: 27em;
-    margin-top: 10em;
+    margin-left: 100px;
+    top:15%
 }
-
+p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 .box{
     background-color: wheat;
+    display: inline-block;
+    margin: 10px;
+    width: 130px;
+    border-radius: 10%;
+    
+}
+.stock-symbol{
+    background-color: rgb(112, 106, 95);
+}
+.gainers{
+    position:relative;
+    margin-left: 200px;
+    margin-right: 50px;
+}
+.losers{
+    position:relative;
+    margin-left: 200px;
+    margin-right: 50px;
 }
