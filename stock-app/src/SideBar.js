@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const logopath = "media/icons8-w-67.png"
+const logopath = "media\icons8-w-67.jpg"
 
 
 
 function SideBar(){
      return(
           <div className="btn-group-vertical" role="group" aria-label="Basic example">
-               <Link to="/"><img className="sidebar-icon" id="homebutton-icon" src={logopath} alt="icon"></img></Link>
+               <Link to="/"><button type="button" className="btn btn-secondary" id="btn-home">Home</button></Link>
+               <br/>
                <button type="button" className="btn btn-secondary" id="btn-profile">Profile</button>
                <br/>
                <button type="button" className="btn btn-secondary" id="btn-wallet">Wallet</button>

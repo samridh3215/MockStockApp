@@ -8,7 +8,7 @@ async function getGainers(){
     var a  =[];
     let res = await fetch(urlForGainers);
     const data =(await res.json())
-    for (var i = 0; i < 10; i++) {
+    for (var i = 0; i < 16; i++) {
         a[i]=data[i]
     } 
     return a;
@@ -20,7 +20,7 @@ async function getLosers(){
     var a  =[];
     let res = await fetch(urlForLosers)
     const data = await res.json()
-    for(let i= 0;i<10;i++){
+    for(let i= 0;i<16;i++){
         a[i]=data[i]
     }
     return a;
