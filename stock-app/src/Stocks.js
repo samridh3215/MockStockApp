@@ -13,9 +13,10 @@ function Stocks(){
           <div>
           <h1>All Stocks</h1>
                <SideBar/>
+               
                <div className="stock-render-div">
-                    <table className="stock-render-table table table table-striped">
-                    <tr><th>S.No</th> <th>Company Name</th> <th>Stock Symbol</th> <th>Stock Price</th> <th>Change</th> <th>Volume</th></tr>
+                    <table className="stock-render-table table steelBlueCols">
+                    <tr className="tableheader"><th>S.No</th> <th>Company Name</th> <th>Stock Symbol</th> <th>Stock Price</th> <th>Change</th> <th>Volume</th></tr>
                     {stockSymbols.map(
                     item=><tr>
                               <td>{i++}</td>

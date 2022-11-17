@@ -8,15 +8,15 @@ p{
     margin-bottom: 5px;
 }
 .box{
-    background-color: wheat;
+    background: #de33999f;
     display: inline-block;
     margin: 10px;
     width: 130px;
     border-radius: 10%;
-    
+    color: white;
 }
 .stock-symbol{
-    background-color: rgb(112, 106, 95);
+    background-color: #1e50a7e6;
 }
 .gainers{
     position:relative;
@@ -27,4 +27,9 @@ p{
     position:relative;
     margin-left: 100px;
     margin-right: 50px;
+}
+.render-info{
+    position: relative;
+    right:2em;
+
 }

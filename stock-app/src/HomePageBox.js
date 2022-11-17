@@ -1,5 +1,4 @@
 import React from "react";
-import { NavItem } from "react-bootstrap";
 
 function HomePageBox(props){
      var stock_url = "https://finance.yahoo.com/quote/"+props.symbol+"?p="+props.symbol

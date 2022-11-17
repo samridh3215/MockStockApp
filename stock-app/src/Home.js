@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import HomePageContainer from "./HomePageContainer";
-import { getGainers, getSymbols, getLosers } from "./responsesFromAPI";
 import SideBar from "./SideBar";
 
 function useFunction(callback){
@@ -15,7 +14,7 @@ function useFunction(callback){
 function Home() {
 
   return (
-    <div>
+    <div className="home-div">
       <h1 className="page-info">Stocks at a glance</h1>
       <SideBar />
       <HomePageContainer/>

@@ -9,13 +9,51 @@ h1{
      display: inline-block;
      position:absolute;
      top:100px;
+     height: 600px;
+     overflow-y: scroll;
 }
 
-.stock-render-table{
-     position: relative;
-     left: 140px;
-
-}
+table.steelBlueCols {
+     background-color: #2CC2D5;
+     text-align: center;
+     border-collapse: collapse;
+   }
+   table.steelBlueCols td, table.steelBlueCols th {
+     padding: 6px 10px;
+   }
+   table.steelBlueCols tbody td {
+     font-size: 14px;
+     font-weight: bold;
+     color: #FFFFFF;
+   }
+   table.steelBlueCols tr:nth-child(even) {
+     background: #6C4AB6;
+   }
+   table.steelBlueCols thead {
+     background: #6C4AB6;
+     background: -moz-linear-gradient(top, #9177c8 0%, #7a5cbd 66%, #6C4AB6 100%);
+     background: -webkit-linear-gradient(top, #9177c8 0%, #7a5cbd 66%, #6C4AB6 100%);
+     background: linear-gradient(to bottom, #9177c8 0%, #7a5cbd 66%, #6C4AB6 100%);
+   }
+   table.steelBlueCols thead th {
+     font-size: 15px;
+     font-weight: bold;
+     color: #FFFFFF;
+     text-align: left;
+   }
+   table.steelBlueCols tfoot td {
+     font-size: 13px;
+   }
+   table.steelBlueCols tfoot .links {
+     text-align: right;
+   }
+   table.steelBlueCols tfoot .links a{
+     display: inline-block;
+     background: #FFFFFF;
+     color: #398AA4;
+     padding: 2px 8px;
+     border-radius: 5px;
+   }
 /* table{
      overflow-y:scroll;
      height:500px;
@@ -34,15 +72,7 @@ h1{
      padding-bottom: 3px;
 } */
 
-.buy{
-     height: 20px;
-     font-size: 15px;
-}
-.sell{
-     
-     height: 20px;
-     font-size: 15px;
-}
+
 .more{
      background:none;
      height: 20px;

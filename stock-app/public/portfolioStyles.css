@@ -9,6 +9,27 @@
 #portfolio-info{
     color: white;
     position: absolute;
-    margin-top : 7em;
-    margin-left: 7em;
+    top:10em;   
+    margin-left: 15em;
+
+}
+.portfolio-container{
+    width: fit-content;
+    
+}
+
+.portfolio{
+    margin-left: 12em;
+    position: absolute;
+    top:15em;
+    overflow-y: scroll;
+    height: 400px;
+
+}
+
+.portfolio-box{
+    color: white;
+    background: rgb(34,195,185);
+    background: linear-gradient(90deg, #c21baf 0%, #148cdce6 100%);
+    width:1200px;
 }

@@ -10,14 +10,14 @@ function HomePageContainer(props){
     return (
         <div className="big-home-container">
             <div className="render-box gainers">
-            <h1>Gainers</h1>
+            <h1 className="render-info">Gainers</h1>
                 {gainers.map(item =>
                     <HomePageBox companyName={item.companyName} price={item.price} symbol={item.symbol} change={item.beta}/>
                 )}
             </div>
             
             <div className="render-box losers">
-            <h1>Losers</h1>
+            <h1 className="render-info">Losers</h1>
                 {losers.map(item =>
                     <HomePageBox companyName={item.companyName} price={item.price} symbol={item.symbol} change={item.beta}/>
                 )}
