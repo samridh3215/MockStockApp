@@ -7,11 +7,12 @@ body{
     background-color: #6C4AB6;
     position:relative;
     top:10em;
-    height: fit-content;
+    height: 300px;
     margin-right: 10em;
+    width: fit-content;
     margin-left: 10px;
-    border-radius:7%;
 }
+
 .sidebar-btn{
     background-color:#6C4AB6;
     border: none;
