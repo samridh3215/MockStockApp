@@ -11,9 +11,6 @@ router.get("/:email/:item/:price", async(req, res)=>{
      if(holds.includes(req.params.item)){
           const updatedUser = await User.updateOne({email:req.params.email}, {$pull: { holdings: req.params.item}, $set:{totalCash: updatedCash}})
      }
-     else{
-          res.send({ message:"Cannot sell as you do not own it"})
-     }
      
 }) 
   

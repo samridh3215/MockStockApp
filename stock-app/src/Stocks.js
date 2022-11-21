@@ -44,7 +44,7 @@ function Stocks(){
                               <td className="table-item">{item.price}</td>
                               <td className="table-item">{item.beta}</td>
                               <td className="table-item">{item.volume}</td> 
-                              <td className="table-item" style={{background:"none"}}><button  className="buy btn-outline-success" onDoubleClick={()=>{buy(item.symbol, item.price); alert("bought")}}/*{()=>{alert(`bought ${item.symbol}`)}}*/>Buy</button></td> 
+                              <td className="table-item" style={{background:"none"}}><button  className="buy btn-outline-success" onDoubleClick={buy(item.symbol, item.price)}/*{()=>{alert(`bought ${item.symbol}`)}}*/>Buy</button></td> 
                               <td className="table-item" style={{background:"none"}}><button className="sell btn-outline-danger" onDoubleClick={sell(item.symbol, item.price)}>Sell</button></td> 
                               <td className="table-item" style={{background:"none"}}><a href={"https://finance.yahoo.com/quote/"+item.symbol+"?p="+item.symbol} className="more" target="_blank">View more</a></td>
                          </tr>
@@ -59,3 +59,4 @@ function Stocks(){
 
 
 export default Stocks
+export {buy, sell}

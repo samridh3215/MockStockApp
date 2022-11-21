@@ -9,11 +9,8 @@ router.get("/:email/:item/:price", async(req, res)=>{
      const updatedCash = currentCash - parseInt(req.params.price)
      if(!currentCash<parseInt(req.params.price)){
           const updatedUser = await User.updateOne({email:req.params.email}, {$push: { holdings: req.params.item}, $set:{totalCash: updatedCash}})
-          console.log(updatedUser)
-     }
-     else{
-          return;
-     }
+          }
+
      
 }) 
   
