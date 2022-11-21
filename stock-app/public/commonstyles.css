@@ -1,21 +1,33 @@
 body{
-    background: rgb(34,195,185);
-    background: linear-gradient(270deg, #22c3b9 0%, rgba(210,108,193,0.9026961126247374) 100%);
+    background-image: url('media/black-background-04-coolbackgrounds.png');
 }
 
 .btn-group-vertical{
-    background-color: #6C4AB6;
+    background:none;
     position:relative;
     top:10em;
     height: 300px;
     margin-right: 10em;
     width: fit-content;
     margin-left: 10px;
+    
+}
+h6{
+    color:white;  
+    text-align: center;  
+    position: absolute;
+    bottom: 0px;
+    margin-left: 10px;
 }
 
 .sidebar-btn{
-    background-color:#6C4AB6;
-    border: none;
+    background: rgba( 215, 214, 217, 0.3);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
 }
 
 

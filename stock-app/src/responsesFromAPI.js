@@ -1,6 +1,9 @@
-const urlForTickers = "https://financialmodelingprep.com/api/v3/stock-screener?marketCapMoreThan=1000000000&betaMoreThan=1&volumeMoreThan=10000&sector=Technology&exchange=NASDAQ&dividendMoreThan=0&limit=100&apikey=6c26a26ee21c72ea8d84650fbefb2135"
-const urlForLosers = "https://financialmodelingprep.com/api/v3/stock_market/losers?apikey=6c26a26ee21c72ea8d84650fbefb2135"
-const urlForGainers = "https://financialmodelingprep.com/api/v3/stock_market/gainers?apikey=6c26a26ee21c72ea8d84650fbefb2135"
+const APIkey1 = "d78579335eda3e1157a940afc7cd4f19"
+const APIkey2 = "6c26a26ee21c72ea8d84650fbefb2135"
+
+const urlForTickers = "https://financialmodelingprep.com/api/v3/stock-screener?marketCapMoreThan=1000000000&betaMoreThan=1&volumeMoreThan=10000&sector=Technology&exchange=NASDAQ&dividendMoreThan=0&&apikey="+APIkey2
+const urlForLosers = "https://financialmodelingprep.com/api/v3/stock_market/losers?apikey="+APIkey2
+const urlForGainers = "https://financialmodelingprep.com/api/v3/stock_market/gainers?apikey="+APIkey2
 
 //changed url for gainers for testing purpose
 
@@ -30,7 +33,7 @@ async function getSymbols(){
     var a  =[];
     let res = await fetch(urlForTickers)
     const data = await res.json()
-    for(let i= 0;i<100;i++){
+    for(let i= 0;i<data.length;i++){
         a[i]=data[i]
     }
     return a;

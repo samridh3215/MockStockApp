@@ -3,9 +3,10 @@ import { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import styles from "./lstyles.module.css";
+import { json } from "body-parser";
 
 const Login = () => {
-	const [data, setData] = useState({ email: "", password: "" });
+	const [data, setData] = useState({ email: "", password: ""});
 	const [error, setError] = useState("");
 
 	const handleChange = ({ currentTarget: input }) => {
@@ -16,6 +17,7 @@ const Login = () => {
 		e.preventDefault();
 		try {
 			const url = "http://localhost:8080/api/auth";
+			localStorage.setItem("userData", JSON.stringify(data))
 			const { data: res } = await axios.post(url, data);
 			localStorage.setItem("token", res.data);
 			window.location = "/Home";

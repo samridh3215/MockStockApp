@@ -10,30 +10,18 @@ function HomePageContainer(props){
     return (
         <div className="big-home-container">
             <div className="render-box gainers">
-            <h1 className="render-info">Gainers</h1>
+            <h2 className="render-info">Gainers</h2>
                 {gainers.map(item =>
                     <HomePageBox companyName={item.companyName} price={item.price} symbol={item.symbol} change={item.beta}/>
                 )}
             </div>
             
             <div className="render-box losers">
-            <h1 className="render-info">Losers</h1>
+            <h2 className="render-info">Losers</h2>
                 {losers.map(item =>
                     <HomePageBox companyName={item.companyName} price={item.price} symbol={item.symbol} change={item.beta}/>
                 )}
             </div>
-            {/* <table className="stock-render-table losers">
-                    <tr><th>S.No</th> <th>Company Name</th> <th>Stock Symbol</th> <th>Change</th></tr>
-                    {losers.slice(0, 20).map(
-                    item=><tr>
-                              <td>{i++}</td>
-                              <td>{item.companyName}</td> 
-                              <td>{item.symbol}</td>
-                              <td>{item.beta}</td>  
-                              <td style={{background:"none"}}><a href="/Stocks/details" className="more">View more</a></td>
-                         </tr>
-                    )}
-            </table> */}
         </div>
     );
 }

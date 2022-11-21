@@ -1,22 +1,28 @@
 .big-home-container{
     position: absolute;
     margin-left: 100px;
-    top:15%
+    top:10%
 }
 p{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+h2{
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+}
 .box{
-    background: #de33999f;
+    background: #2e2d2e9f;
     display: inline-block;
-    margin: 10px;
+    margin: 7px;
     width: 130px;
     border-radius: 10%;
     color: white;
 }
 .stock-symbol{
-    background-color: #1e50a7e6;
+    background-color: #d7d6d9;
+    color: black;
 }
 .gainers{
     position:relative;

@@ -1,12 +1,20 @@
 .login_container {
 	width: 100%;
 	min-height: 100vh;
-	background-color: #f5f5f5;
+	background: rgba( 41, 32, 32, 0.25 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 7px );
+	-webkit-backdrop-filter: blur( 7px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-
+.left h1{
+	color: #d26cc1e6;
+	margin-bottom: 50px;
+}
 .login_form_container {
 	width: 900px;
 	height: 500px;
@@ -22,7 +30,12 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: white;
+	background: rgba( 41, 32, 32, 0.25 );
+	box-shadow: 0 8px 32px 0 rgba(190, 52, 114, 0.551);
+	backdrop-filter: blur( 7px );
+	-webkit-backdrop-filter: blur( 7px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 }
@@ -66,14 +79,19 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: #3bb19b;
+	background: rgba( 41, 32, 32, 0.25 );
+	box-shadow: 0 8px 32px 0 rgba(190, 52, 114, 0.551);
+	backdrop-filter: blur( 7px );
+	-webkit-backdrop-filter: blur( 7px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
 
 .right h1 {
 	margin-top: 0;
-	color: white;
+	color: #d26cc1e6;
 	font-size: 40px;
 	align-self: center;
 }
@@ -83,16 +101,17 @@
 	border: none;
 	outline: none;
 	padding: 12px 0;
-	background-color: white;
+	background-color: #d26cc1e6;
 	border-radius: 20px;
 	width: 180px;
+	color: white;
 	font-weight: bold;
 	font-size: 14px;
 	cursor: pointer;
 }
 
 .green_btn {
-	background-color: #3bb19b;
+	margin-top: 50px;
+	background-color: #d26cc1e6;
 	color: white;
-	margin: 10px;
 }

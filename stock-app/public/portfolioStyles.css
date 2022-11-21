@@ -28,8 +28,13 @@
 }
 
 .portfolio-box{
+    background: rgba( 41, 32, 32, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.192);
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    width: 1200px;
     color: white;
-    background: rgb(34,195,185);
-    background: linear-gradient(90deg, #c21baf 0%, #148cdce6 100%);
-    width:1200px;
+    padding: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }

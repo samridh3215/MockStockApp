@@ -19,7 +19,7 @@ ReactDOM.render(
             <Route exact path="/Home" element={<Home />} />
             <Route exact path="/Portfolio" element={<Portfolio/>} />
             <Route exact path="/Stocks" element={<Stocks/>}/>
-            <Route exact path = "/Wallet" element={<Wallet/>}/>
+            {/* <Route exact path = "/Wallet" element={<Wallet/>}/> */}
         </Routes>
     </BrowserRouter> , root
     );
